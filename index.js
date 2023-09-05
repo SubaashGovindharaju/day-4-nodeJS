@@ -1,5 +1,4 @@
 import express from 'express';
-import { logSomething } from './utils.js';
 import todoRouter from './routes/todos.js';
 import userRouter from './routes/users.js';
 import connectToDb from './db-utils/mongoos-connection.js';
@@ -24,5 +23,4 @@ app.get('/api', (req, res) => {
 
 app.listen(PORT, () => {
     console.log('started');
-    logSomething();
 });
